@@ -1,0 +1,30 @@
+\documentclass[border=0.2cm]{standalone}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{helvet}
+
+\renewcommand\familydefault\sfdefault
+\newcolumntype{I}{>{\columncolor[HTML]{EFEFEF}\textit\bgroup\centering\rule{0pt}{2ex}}c<{\egroup}}
+
+\begin{document}
+    %\footnotesize
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|I|l|l|l|l|}
+        \hline
+        \rowcolor[HTML]{EFEFEF} % Shading for the header row
+        \textnormal{\textbf{Podsíť}} & \textbf{Maska} & \textbf{Podsítě} & \textbf{Hostitelé} & \textbf{Blok} \\ \hline
+        /25 & & & & \\ \hline
+        /26 & & & & \\ \hline
+        /27 & & & & \\ \hline
+        /28 & & & & \\ \hline
+        /29 & & & & \\ \hline
+        /30 & & & & \\ \hline
+    \end{tabular}%
+}
+\end{document}
