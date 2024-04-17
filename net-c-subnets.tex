@@ -1,0 +1,33 @@
+\documentclass[border=0.2cm]{standalone}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{makecell}
+\usepackage{helvet}
+
+\renewcommand\familydefault\sfdefault
+\newcolumntype{I}{>{\columncolor[HTML]{EFEFEF}\bgroup\centering\rule{0pt}{2ex}}c<{\egroup}}
+
+\begin{document}
+    \centering
+    \renewcommand{\arraystretch}{1.5} % Adjusting the vertical spacing
+    \begin{tabular}{|I|l|l|l|l|}
+        \hline
+        \rowcolor[HTML]{EFEFEF} % Shading for the header row
+        \textnormal{\textbf{Síť}} & \textbf{Hostitelé} & \textbf{Blok} & \textbf{Podsíť} & \textbf{Maska} \\ \hline
+        A & & & & \\ \hline
+        B & & & & \\ \hline
+        C & & & & \\ \hline
+        D & & & & \\ \hline
+        E & & & & \\ \hline
+        H & & & & \\ \hline
+        G & & & & \\ \hline
+        H & & & & \\ \hline
+        I & & & & \\ \hline
+        J & & & & \\ \hline
+        K & & & & \\ \hline
+        L & & & & \\ \hline
+    \end{tabular}
+\end{document}
